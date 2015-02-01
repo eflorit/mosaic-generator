@@ -212,7 +212,7 @@ class Mosaic {
 	    	
 	    	for($i = ($coordY - $this->min_space_same_thumb) + 1; $i < ($coordY + $this->min_space_same_thumb); $i++) {
 		    	for($j = ($coordX - $this->min_space_same_thumb + 1); $j < ($coordX + $this->min_space_same_thumb); $j++) {
-		    		if(isset($matrix[$i][$j]) && $matrix[$i][$j] == $result) {
+		    		if(isset($this->matrix[$i][$j]) && $this->matrix[$i][$j] == $result) {
 		    			$suitable = false;
 		    			break;
 		    		}
@@ -220,7 +220,7 @@ class Mosaic {
 	    	}
 	    } while($suitable == false);
 
-	    $matrix[$coordY][$coordX] = $result;
+	    $this->matrix[$coordY][$coordX] = $result;
 	    
 	    return $result;
 	}
