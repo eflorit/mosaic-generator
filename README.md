@@ -54,7 +54,7 @@ $ ./cl-script.php --input {filename} --rows {int} --columns {int} [--thumbs]
 ...Directly from class:
 
 ```php
-	$ouput_filename = new Mosaic(string $input_filename, int $rows, int $columns [, bool $gen_thumbs = true ] );
+$ouput_filename = new Mosaic(string $input_filename, int $rows, int $columns [, bool $gen_thumbs = true ] );
 ```
 
 Troubleshoot
